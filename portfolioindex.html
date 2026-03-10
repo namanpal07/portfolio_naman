@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portstyle.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span class="red">N</span>aman.</h2>
+
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>I'm a Software Developer</p>
+                <h4>DSA Enthusiast | Competitive Coder | AI Learner</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="imageport.jpg" alt="Naman Photo">
+                </div>
+
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>
+                        Hello, I’m Naman, a passionate software developer in the making, currently focusing on Artificial Intelligence and modern development technologies. I am dedicated to improving my programming skills and building practical projects that solve real-world problems.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> HTML, CSS, JavaScript | Building responsive websites</li>
+                            <li><span>Java Programming</span><br> Problem-solving & OOP concepts</li>
+                            <li><span>Python Learning</span><br> Exploring Python for backend development</li>
+                            <li><span>Data Structures & Algorithms</span><br> Solving daily LeetCode problems | Competitive coding</li>
+                            <!-- TODO: Add more skills here as you learn new technologies, e.g., AI/ML, databases, etc. -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br> 10th Class</li>
+                            <li><span>2024</span><br> 12th Class<br> Percentage: 80%</li>
+                            <li><span>2024 - Present</span><br> Bachelor of Technology in Computer Science<br> Current Year: 2nd Year | CGPA: 8.29</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>15/07/2025 - 15/08/2025</span><br> Internship at CodeSOFT<br> Role: Java Programming | Problem-Solving Internship</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="Services">
+        <div class="container">
+            <h2 class="sub-title">My Expertise</h2>
+            <div class="services-list">
+                <div>
+                    <h3>Problem Solving & DSA</h3>
+                    <p>Competitive programming with focus on Data Structures and Algorithms through LeetCode and coding challenges.</p>
+                </div>
+                <div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div>
+                    <h3>Java Backend Development</h3>
+                    <p>Java Core programming with JDBC connectivity, API development, and server-side application development.</p>
+                </div>
+                <!-- TODO: Add more services as you expand your skills, e.g., AI integration, database design -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio section -->
+    <div id="Portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <!-- TODO: Uncomment and add your projects here when complete -->
+                <!-- 
+                <div class="work">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="layer">
+                        <h3>Project Title 1</h3>
+                        <p>Description of the project.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="Contact">
+        <div class="container">
+            <h2 class="sub-title">Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>Email: namancse9258@gmail.com</p>
+                <p>Phone: 9258669150</p>
+                <p>
+                    <a href="https://github.com/namanpal07" target="_blank">GitHub</a> |
+                    <a href="https://leetcode.com/u/namanpal9258/" target="_blank">LeetCode</a> |
+                    <a href="https://www.linkedin.com/in/namanpal" target="_blank">LinkedIn</a> |
+                    <a href="https://www.geeksforgeeks.org/profile/namanpab0hz" target="_blank">GeeksforGeeks</a>
+                </p>
+                <p>
+                    <a href="https://1drv.ms/w/c/5d940ee07bd99e2c/IQDJX1-kyOqBSJVuyDCUICjyAWeScSnIRjvlh7he7fIPFzU?e=WMW7hH" target="_blank">Download Resume / CV</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Naman. All rights reserved.</p>
+            <!-- TODO: Add social media links or update copyright year -->
+        </div>
+    </footer>
+
+    <script>
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
