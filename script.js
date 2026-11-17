@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
 
     const updateActiveNavLink = () => {
-        const scrollPosition = window.scrollY + 100;
+        const scrollPosition = window.scrollY + 120;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -76,66 +76,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', updateActiveNavLink, { passive: true });
 
-    // --- 4. Copy Email to Clipboard ---
-    const copyEmailBtn = document.getElementById('copy-email-btn');
-    const toast = document.getElementById('toast');
-    let toastTimeout;
-
-    const showToast = (message) => {
-        if (!toast) return;
-        toast.textContent = message;
-        toast.classList.add('show');
-        clearTimeout(toastTimeout);
-        toastTimeout = setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3000);
-    };
-
-    if (copyEmailBtn) {
-        copyEmailBtn.addEventListener('click', async () => {
-            const email = 'namancse9258@gmail.com';
-            try {
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    await navigator.clipboard.writeText(email);
-                } else {
-                    // Fallback for older environments
-                    const tempInput = document.createElement('textarea');
-                    tempInput.value = email;
-                    tempInput.style.position = 'fixed';
-                    tempInput.style.opacity = '0';
-                    document.body.appendChild(tempInput);
-                    tempInput.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tempInput);
-                }
-                showToast('Email copied to clipboard: ' + email);
-            } catch (err) {
-                showToast('Email address: ' + email);
-            }
-        });
-    }
-
-    // --- 5. Functional Email Composer Form ---
-    const contactForm = document.getElementById('contact-email-form');
+    // --- 4. Working Contact Form (Mailto) ---
+    const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const name = document.getElementById('sender-name')?.value.trim() || '';
-            const email = document.getElementById('sender-email')?.value.trim() || '';
-            const subject = document.getElementById('message-subject')?.value.trim() || 'Portfolio Inquiry';
-            const message = document.getElementById('message-body')?.value.trim() || '';
+            const name = document.getElementById('contact-name')?.value.trim() || '';
+            const email = document.getElementById('contact-email')?.value.trim() || '';
+            const message = document.getElementById('contact-message')?.value.trim() || '';
 
             const recipient = 'namancse9258@gmail.com';
-            const formattedBody = `Hi Naman,\n\n${message}\n\n---\nFrom: ${name}\nEmail: ${email}`;
+            const subject = `Portfolio Inquiry from ${name}`;
+            const body = `Hi Naman,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`;
 
-            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-            // Open in user's default email client
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+
+            if (submitBtn) {
+                submitBtn.innerHTML = '<span>Opening Email Client...</span>';
+                submitBtn.disabled = true;
+            }
+
+            // Trigger email client
             window.location.href = mailtoUrl;
 
-            showToast('Opening your default email client...');
+            setTimeout(() => {
+                if (submitBtn) {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            }, 2500);
         });
     }
 });

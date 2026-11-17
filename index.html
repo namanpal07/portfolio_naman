@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naman Pal | BTech CSE Student & Developer</title>
+    <title>Naman Pal | Developer & Computer Science Student</title>
     <meta name="description"
-        content="Personal portfolio of Naman Pal, 2nd-year BTech CSE student at Galgotias University. Interested in software development, web development, AI, iOS development, and DSA.">
+        content="Personal portfolio of Naman Pal, Third-Year BTech Computer Science and Engineering student at Galgotias University. Interested in software development, web development, AI applications, and iOS development.">
     <meta name="author" content="Naman Pal">
-    <meta name="theme-color" content="#0d1117">
+    <meta name="theme-color" content="#0b0d11">
 
-    <!-- Google Fonts: Inter -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,15 +19,21 @@
 </head>
 
 <body>
-    <!-- Header / Navbar -->
+    <!-- Site Navigation -->
     <header class="site-header" id="site-header">
         <nav class="navbar" aria-label="Main Navigation">
             <a href="#home" class="nav-brand" aria-label="Naman Pal Home">
                 <span class="brand-name">Naman Pal</span>
-                <span class="brand-dot"></span>
             </a>
 
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
             <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -35,114 +41,46 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
-            <div class="nav-actions">
-                <a href="#contact" class="btn btn-sm btn-outline">Get in Touch</a>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-                    <span class="hamburger-bar"></span>
-                    <span class="hamburger-bar"></span>
-                    <span class="hamburger-bar"></span>
-                </button>
-            </div>
         </nav>
     </header>
 
     <main id="main-content">
-        <!-- Hero Section -->
+        <!-- Home / Hero Section -->
         <section id="home" class="hero-section">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <div class="status-badge">
-                        <span class="status-pulse"></span>
-                        <span>2nd Year BTech CSE • Galgotias University</span>
-                    </div>
-
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="text-accent">Naman Pal</span>.
-                    </h1>
-
-                    <p class="hero-role">
-                        BTech CSE Student <span class="role-separator">|</span> Developer <span class="role-separator">|</span> Problem Solver
-                    </p>
-
+                    <p class="hero-greeting">Hi, I'm Naman Pal.</p>
+                    <h1 class="hero-role">Third-Year BTech CSE Student | Developer</h1>
                     <p class="hero-description">
-                        Currently pursuing BTech in Computer Science and Engineering at Galgotias University. I enjoy building projects, solving DSA problems and exploring technologies such as web development, AI and iOS development.
+                        I am currently pursuing BTech in Computer Science and Engineering at Galgotias University. I enjoy building projects, solving Data Structures and Algorithms problems, and exploring technologies across web development, AI applications, and iOS development.
                     </p>
 
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View My Projects</span>
-                            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                                <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span>Get In Touch</span>
-                        </a>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
 
-                    <div class="hero-socials">
-                        <span class="socials-label">Connect:</span>
-                        <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <div class="hero-social-links">
+                        <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="hero-social-item" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
                             </svg>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://linkedin.com/in/namanpal" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+
+                        <a href="https://linkedin.com/in/namanpal" target="_blank" rel="noopener noreferrer" class="hero-social-item" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.05 1.53 1.53 0 0 0 .01 3.05m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
                             </svg>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://leetcode.com/u/namanpal9258/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode Profile">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+
+                        <a href="https://leetcode.com/u/namanpal9258/" target="_blank" rel="noopener noreferrer" class="hero-social-item" aria-label="LeetCode Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.6 2.6 0 0 1 .383-.357l3.997-4.28 4.908-5.328a1.383 1.383 0 0 0-.96-2.327zM8.32 12.062a1.376 1.376 0 0 0-1.376 1.376 1.376 1.376 0 0 0 1.376 1.376h8.498a1.376 1.376 0 0 0 1.376-1.376 1.376 1.376 0 0 0-1.376-1.376H8.32z"/>
                             </svg>
                             <span>LeetCode</span>
                         </a>
-                    </div>
-                </div>
-
-                <!-- Right Side Summary Card -->
-                <div class="hero-card-wrapper">
-                    <div class="profile-card">
-                        <div class="card-header-bar">
-                            <span class="window-dot red"></span>
-                            <span class="window-dot yellow"></span>
-                            <span class="window-dot green"></span>
-                            <span class="window-title">naman_profile.json</span>
-                        </div>
-                        <div class="profile-card-body">
-                            <div class="code-line"><span class="code-key">"name"</span>: <span class="code-val">"Naman Pal"</span>,</div>
-                            <div class="code-line"><span class="code-key">"education"</span>: <span class="code-val">"BTech CSE (2nd Year)"</span>,</div>
-                            <div class="code-line"><span class="code-key">"university"</span>: <span class="code-val">"Galgotias University"</span>,</div>
-                            <div class="code-line"><span class="code-key">"current_cgpa"</span>: <span class="code-val text-accent">8.12</span>,</div>
-                            <div class="code-line"><span class="code-key">"expected_grad"</span>: <span class="code-val">2028</span>,</div>
-                            <div class="code-line"><span class="code-key">"dsa_solved"</span>: <span class="code-val text-accent">"425+ problems"</span>,</div>
-                            <div class="code-line"><span class="code-key">"learning_focus"</span>: [</div>
-                            <div class="code-line indent"><span class="code-val">"Java & DSA"</span>,</div>
-                            <div class="code-line indent"><span class="code-val">"Web Development"</span>,</div>
-                            <div class="code-line indent"><span class="code-val">"AI Applications"</span>,</div>
-                            <div class="code-line indent"><span class="code-val">"iOS (Swift & SwiftUI)"</span></div>
-                            <div class="code-line">]</div>
-                        </div>
-                        <div class="profile-card-footer">
-                            <div class="card-stat">
-                                <span class="stat-number">8.12</span>
-                                <span class="stat-label">Current CGPA</span>
-                            </div>
-                            <div class="card-stat-divider"></div>
-                            <div class="card-stat">
-                                <span class="stat-number">2028</span>
-                                <span class="stat-label">Graduation</span>
-                            </div>
-                            <div class="card-stat-divider"></div>
-                            <div class="card-stat">
-                                <span class="stat-number">425+</span>
-                                <span class="stat-label">DSA Solved</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -151,89 +89,39 @@
         <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">01 / ABOUT</span>
-                    <h2 class="section-title">About Me</h2>
+                <div class="section-heading">
+                    <h2 class="section-title">About</h2>
                 </div>
 
-                <div class="about-grid">
-                    <div class="about-text-content">
-                        <p class="about-lead">
-                            I am a second-year Computer Science and Engineering student at Galgotias University who enjoys learning through hands-on practical projects.
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am a third-year Computer Science and Engineering student at Galgotias University (Batch 2024–2028) with a current CGPA of 8.12. My primary interests include software development, web development, AI applications, iOS development, and problem-solving.
                         </p>
-                        <p class="about-body">
-                            My focus centers on practical software engineering and core fundamentals. I actively explore software development, responsive web development, AI-based applications, iOS development using Swift and SwiftUI, and algorithmic problem-solving using Java.
+                        <p>
+                            I believe in learning through projects and practical implementation. Whether building responsive web tools, developing Java desktop and console applications, or exploring Swift and SwiftUI for iOS apps, I enjoy translating fundamental concepts into functional software.
                         </p>
-                        <p class="about-body">
-                            Rather than viewing programming solely through theory, I spend time building projects, writing code, and solving Data Structures and Algorithms problems. I am continuously learning and refining my technical skills to prepare for software engineering opportunities and collaborations.
+                        <p>
+                            I am continuously learning, refining my coding practices, and solving Data Structures and Algorithms problems. I am eager to contribute, collaborate on practical projects, and gain hands-on engineering experience.
                         </p>
-
-                        <div class="about-details-list">
-                            <div class="detail-item">
-                                <span class="detail-label">Degree</span>
-                                <span class="detail-value">BTech in Computer Science and Engineering</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Institution</span>
-                                <span class="detail-value">Galgotias University, Greater Noida</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Academic Year</span>
-                                <span class="detail-value">2nd Year (2024 – 2028)</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Academic Standing</span>
-                                <span class="detail-value highlight">Current CGPA: 8.12</span>
-                            </div>
-                            <div class="detail-item">
-                                <span class="detail-label">Location</span>
-                                <span class="detail-value">Greater Noida, Uttar Pradesh, India</span>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="about-cards-column">
-                        <div class="info-card">
-                            <div class="info-card-header">
-                                <span class="info-card-icon">🎓</span>
-                                <div>
-                                    <h3 class="info-card-title">Academic Background</h3>
-                                    <p class="info-card-subtitle">Galgotias University</p>
-                                </div>
-                            </div>
-                            <p class="info-card-desc">
-                                Pursuing BTech in CSE (Batch 2024–2028) with a current CGPA of <strong>8.12</strong>. Building a solid foundation in algorithms, databases, and computer systems.
-                            </p>
+                    <div class="about-summary-grid">
+                        <div class="summary-item">
+                            <span class="summary-label">Academic Year</span>
+                            <span class="summary-value">Third Year (Batch 2024–2028)</span>
                         </div>
-
-                        <div class="info-card">
-                            <div class="info-card-header">
-                                <span class="info-card-icon">💡</span>
-                                <div>
-                                    <h3 class="info-card-title">Learning Approach</h3>
-                                    <p class="info-card-subtitle">Project-First Mindset</p>
-                                </div>
-                            </div>
-                            <p class="info-card-desc">
-                                Dedicated to learning by building real, working software—from full-stack web applications and Java database systems to native iOS prototypes and DSA practice.
-                            </p>
+                        <div class="summary-item">
+                            <span class="summary-label">University</span>
+                            <span class="summary-value">Galgotias University</span>
                         </div>
-
-                        <div class="info-card">
-                            <div class="info-card-header">
-                                <span class="info-card-icon">🎯</span>
-                                <div>
-                                    <h3 class="info-card-title">Current Focus</h3>
-                                    <p class="info-card-subtitle">Technologies Under Study</p>
-                                </div>
-                            </div>
-                            <div class="pill-group">
-                                <span class="tech-pill">Java & DSA</span>
-                                <span class="tech-pill">Web Dev</span>
-                                <span class="tech-pill">Node.js</span>
-                                <span class="tech-pill">Swift & SwiftUI</span>
-                                <span class="tech-pill">AI Integration</span>
-                            </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Current CGPA</span>
+                            <span class="summary-value highlight">8.12</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Interests</span>
+                            <span class="summary-value">Software Dev, Web, AI & iOS</span>
                         </div>
                     </div>
                 </div>
@@ -241,174 +129,65 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section section-alt">
+        <section id="skills" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">02 / SKILLS</span>
-                    <h2 class="section-title">Technical Skills</h2>
-                    <p class="section-subtitle">
-                        Technologies and tools I practice and use in building projects. Organized cleanly without artificial percentages.
+                <div class="section-heading">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-description">
+                        Languages, frameworks, databases, and tools I actively practice and use across my projects.
                     </p>
                 </div>
 
-                <div class="skills-grid">
-                    <!-- Programming -->
-                    <div class="skill-category-card">
-                        <div class="skill-category-header">
-                            <div class="category-icon-wrapper">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="category-title">Programming</h3>
-                                <span class="category-count">Core Languages</span>
-                            </div>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">Swift</span>
                         </div>
-                        <ul class="skill-tags-list">
-                            <li class="skill-tag">
-                                <span class="skill-name">Java</span>
-                                <span class="skill-role-tag">Primary / DSA & OOP</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">C</span>
-                                <span class="skill-role-tag">Foundations</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-role-tag">Scripting & AI Basics</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-role-tag">Frontend & Backend</span>
-                            </li>
-                        </ul>
                     </div>
 
-                    <!-- Web Development -->
-                    <div class="skill-category-card">
-                        <div class="skill-category-header">
-                            <div class="category-icon-wrapper">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="category-title">Web Development</h3>
-                                <span class="category-count">Frontend & Styling</span>
-                            </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">React</span>
+                            <span class="skill-pill">Tailwind CSS</span>
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Express.js</span>
                         </div>
-                        <ul class="skill-tags-list">
-                            <li class="skill-tag">
-                                <span class="skill-name">HTML5</span>
-                                <span class="skill-role-tag">Semantic Markup</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">CSS3</span>
-                                <span class="skill-role-tag">Flexbox & Grid</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">React</span>
-                                <span class="skill-role-tag">Component UI</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">Tailwind CSS</span>
-                                <span class="skill-role-tag">Utility-First CSS</span>
-                            </li>
-                        </ul>
                     </div>
 
-                    <!-- Database -->
-                    <div class="skill-category-card">
-                        <div class="skill-category-header">
-                            <div class="category-icon-wrapper">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="category-title">Database</h3>
-                                <span class="category-count">Data Persistence</span>
-                            </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill">MySQL</span>
+                            <span class="skill-pill">MongoDB</span>
                         </div>
-                        <ul class="skill-tags-list">
-                            <li class="skill-tag">
-                                <span class="skill-name">MySQL</span>
-                                <span class="skill-role-tag">Relational & Queries</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">MongoDB</span>
-                                <span class="skill-badge-level">Beginner</span>
-                            </li>
-                        </ul>
                     </div>
 
-                    <!-- iOS Development -->
-                    <div class="skill-category-card">
-                        <div class="skill-category-header">
-                            <div class="category-icon-wrapper">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="category-title">iOS Development</h3>
-                                <span class="category-count">Apple Ecosystem</span>
-                            </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">iOS Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Swift</span>
+                            <span class="skill-pill">SwiftUI</span>
                         </div>
-                        <ul class="skill-tags-list">
-                            <li class="skill-tag">
-                                <span class="skill-name">Swift</span>
-                                <span class="skill-role-tag">Language</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">SwiftUI</span>
-                                <span class="skill-role-tag">Declarative UI</span>
-                            </li>
-                        </ul>
                     </div>
 
-                    <!-- Tools & Workflow -->
-                    <div class="skill-category-card">
-                        <div class="skill-category-header">
-                            <div class="category-icon-wrapper">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="category-title">Tools & Workflow</h3>
-                                <span class="category-count">Development Environment</span>
-                            </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Xcode</span>
+                            <span class="skill-pill">Figma</span>
                         </div>
-                        <ul class="skill-tags-list">
-                            <li class="skill-tag">
-                                <span class="skill-name">Git</span>
-                                <span class="skill-role-tag">Version Control</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">GitHub</span>
-                                <span class="skill-role-tag">Repositories & Collaboration</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">VS Code</span>
-                                <span class="skill-role-tag">Code Editor</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">Xcode</span>
-                                <span class="skill-role-tag">iOS IDE</span>
-                            </li>
-                            <li class="skill-tag">
-                                <span class="skill-name">Figma</span>
-                                <span class="skill-role-tag">UI/UX Prototyping</span>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -417,182 +196,137 @@
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">03 / PROJECTS</span>
+                <div class="section-heading">
                     <h2 class="section-title">Projects</h2>
-                    <p class="section-subtitle">
-                        Selected academic and personal projects demonstrating full-stack web development, Java software engineering, and database management.
+                    <p class="section-description">
+                        Featured applications built with modern web technologies, Java, and database systems.
                     </p>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-list">
                     <!-- Project 1: AI Resume Checker -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <div class="project-type-badge">
-                                <span>Full-Stack Web App</span>
-                            </div>
-                            <span class="project-featured-tag">Deployed</span>
-                        </div>
-
-                        <div class="project-card-body">
-                            <h3 class="project-title">AI Resume Checker</h3>
-                            <p class="project-description">
-                                A web application designed to help students and freshers analyze their resumes against selected job roles and identify areas for improvement.
-                            </p>
-
-                            <div class="project-tech-stack" aria-label="Technologies used">
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">Express</span>
+                    <article class="project-entry">
+                        <div class="project-header-row">
+                            <h3 class="project-name">AI Resume Checker</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/namanpal07/AI-Resume-Checker" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="GitHub repository for AI Resume Checker">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://ai-resume-checker-eight-omega.vercel.app" target="_blank" rel="noopener noreferrer" class="link-btn primary" aria-label="Live Demo of AI Resume Checker">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Live Demo</span>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="project-card-footer">
-                            <a href="https://github.com/namanpal07/AI-Resume-Checker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://ai-resume-checker-eight-omega.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                                <span>Live Demo</span>
-                            </a>
+                        <p class="project-desc">
+                            A web application designed to help students and freshers analyze their resumes against selected job roles, evaluate skill alignment, and identify areas for improvement to strengthen internship and placement applications.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
                         </div>
                     </article>
 
-                    <!-- Project 2: Jharkhand Digital Tourism Platform -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <div class="project-type-badge">
-                                <span>Web Platform</span>
+                    <!-- Project 2: Smart Digital Tourism Platform -->
+                    <article class="project-entry">
+                        <div class="project-header-row">
+                            <h3 class="project-name">Smart Digital Tourism Platform</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/namanpal07/JharkhandTour" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="GitHub repository for Smart Digital Tourism Platform">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="project-card-body">
-                            <h3 class="project-title">Jharkhand Digital Tourism Platform</h3>
-                            <p class="project-description">
-                                A tourism-focused platform designed to showcase destinations, local culture and tourism opportunities in Jharkhand.
-                            </p>
-
-                            <div class="project-tech-stack" aria-label="Technologies used">
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">Tailwind CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card-footer">
-                            <a href="https://github.com/namanpal07/JharkhandTour" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
+                        <p class="project-desc">
+                            A tourism-focused platform designed to showcase destinations, local culture, travel guides, and tourism opportunities in Jharkhand through a responsive web interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
                     </article>
 
                     <!-- Project 3: Library Management System -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <div class="project-type-badge">
-                                <span>Java Desktop App</span>
+                    <article class="project-entry">
+                        <div class="project-header-row">
+                            <h3 class="project-name">Library Management System</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/namanpal07/Library_Management_System_" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="GitHub repository for Library Management System">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="project-card-body">
-                            <h3 class="project-title">Library Management System</h3>
-                            <p class="project-description">
-                                A Java-based application for managing library books, users and transactions.
-                            </p>
-
-                            <div class="project-tech-stack" aria-label="Technologies used">
-                                <span class="tech-badge">Java</span>
-                                <span class="tech-badge">Swing</span>
-                                <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">JDBC</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card-footer">
-                            <a href="https://github.com/namanpal07/Library_Management_System_" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
+                        <p class="project-desc">
+                            A Java-based desktop application for managing library books, users, and borrowing transactions, implemented using Swing UI, MySQL, and JDBC for structured data handling.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JDBC</span>
                         </div>
                     </article>
 
                     <!-- Project 4: ATM Interface System -->
-                    <article class="project-card">
-                        <div class="project-card-header">
-                            <div class="project-type-badge">
-                                <span>Java Application</span>
+                    <article class="project-entry">
+                        <div class="project-header-row">
+                            <h3 class="project-name">ATM Interface System</h3>
+                            <div class="project-actions">
+                                <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="link-btn" aria-label="GitHub profile for ATM Interface System">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
                             </div>
                         </div>
-
-                        <div class="project-card-body">
-                            <h3 class="project-title">ATM Interface System</h3>
-                            <p class="project-description">
-                                A Java-based console application that simulates basic ATM operations.
-                            </p>
-
-                            <div class="project-tech-stack" aria-label="Technologies used">
-                                <span class="tech-badge">Java</span>
-                                <span class="tech-badge">OOP</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card-footer">
-                            <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
+                        <p class="project-desc">
+                            A Java-based console application simulating core ATM functionality such as user authentication, balance inquiries, deposits, withdrawals, and transaction records using object-oriented principles.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- DSA Section -->
-        <section id="dsa" class="section section-alt">
+        <!-- DSA and Coding Profiles -->
+        <section id="dsa" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">04 / PROBLEM SOLVING</span>
-                    <h2 class="section-title">DSA & Coding Progress</h2>
-                    <p class="section-subtitle">
-                        Consistent practice in Data Structures and Algorithms with a focus on Java, covering arrays, strings, recursion, linked lists, trees, and logic building.
+                <div class="section-heading">
+                    <h2 class="section-title">DSA and Coding Profiles</h2>
+                    <p class="section-description">
+                        Consistent practice in problem-solving and algorithmic fundamentals with Java.
                     </p>
                 </div>
 
-                <div class="dsa-grid">
-                    <!-- LeetCode Card -->
-                    <div class="dsa-stat-card">
-                        <div class="dsa-card-header">
-                            <div class="platform-meta">
-                                <span class="platform-tag leetcode-tag">LeetCode</span>
-                                <h3 class="platform-name">LeetCode</h3>
-                            </div>
-                            <span class="dsa-verified-badge">Active</span>
+                <div class="dsa-cards-grid">
+                    <div class="dsa-card">
+                        <div class="dsa-card-top">
+                            <span class="dsa-platform">LeetCode</span>
                         </div>
-                        <div class="dsa-number-wrap">
-                            <span class="dsa-big-num">300+</span>
-                            <span class="dsa-subtext">Problems Solved</span>
-                        </div>
-                        <p class="dsa-desc">
-                            Focused practice on arrays, two pointers, hashing, binary search, and dynamic programming in Java.
-                        </p>
-                        <a href="https://leetcode.com/u/namanpal9258/" target="_blank" rel="noopener noreferrer" class="dsa-link">
+                        <div class="dsa-count">350+</div>
+                        <div class="dsa-meta">Problems Solved</div>
+                        <a href="https://leetcode.com/u/namanpal9258/" target="_blank" rel="noopener noreferrer" class="dsa-platform-link">
                             <span>View LeetCode Profile</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -601,23 +335,13 @@
                         </a>
                     </div>
 
-                    <!-- GeeksforGeeks Card -->
-                    <div class="dsa-stat-card">
-                        <div class="dsa-card-header">
-                            <div class="platform-meta">
-                                <span class="platform-tag gfg-tag">GeeksforGeeks</span>
-                                <h3 class="platform-name">GeeksforGeeks</h3>
-                            </div>
-                            <span class="dsa-verified-badge">Active</span>
+                    <div class="dsa-card">
+                        <div class="dsa-card-top">
+                            <span class="dsa-platform">GeeksforGeeks</span>
                         </div>
-                        <div class="dsa-number-wrap">
-                            <span class="dsa-big-num">100+</span>
-                            <span class="dsa-subtext">Problems Solved</span>
-                        </div>
-                        <p class="dsa-desc">
-                            Fundamental problem-solving, topic-wise practice, and standard algorithmic patterns.
-                        </p>
-                        <a href="https://www.geeksforgeeks.org/profile/namanpab0hz?tab=activity" target="_blank" rel="noopener noreferrer" class="dsa-link">
+                        <div class="dsa-count">100+</div>
+                        <div class="dsa-meta">Problems Solved</div>
+                        <a href="https://www.geeksforgeeks.org/profile/namanpab0hz?tab=activity" target="_blank" rel="noopener noreferrer" class="dsa-platform-link">
                             <span>View GFG Profile</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -626,23 +350,13 @@
                         </a>
                     </div>
 
-                    <!-- Codeforces Card -->
-                    <div class="dsa-stat-card">
-                        <div class="dsa-card-header">
-                            <div class="platform-meta">
-                                <span class="platform-tag cf-tag">Codeforces</span>
-                                <h3 class="platform-name">Codeforces</h3>
-                            </div>
-                            <span class="dsa-verified-badge">Active</span>
+                    <div class="dsa-card">
+                        <div class="dsa-card-top">
+                            <span class="dsa-platform">Codeforces</span>
                         </div>
-                        <div class="dsa-number-wrap">
-                            <span class="dsa-big-num">25+</span>
-                            <span class="dsa-subtext">Problems Solved</span>
-                        </div>
-                        <p class="dsa-desc">
-                            Contest participation and speed problem-solving to sharpen mathematical and logical reasoning.
-                        </p>
-                        <a href="https://codeforces.com/" target="_blank" rel="noopener noreferrer" class="dsa-link">
+                        <div class="dsa-count">25+</div>
+                        <div class="dsa-meta">Problems Solved</div>
+                        <a href="https://codeforces.com/" target="_blank" rel="noopener noreferrer" class="dsa-platform-link">
                             <span>View Codeforces</span>
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -650,156 +364,83 @@
                             </svg>
                         </a>
                     </div>
-
-                    <!-- Codolio Profile Card -->
-                    <div class="dsa-stat-card dsa-highlight-card">
-                        <div class="dsa-card-header">
-                            <div class="platform-meta">
-                                <span class="platform-tag codolio-tag">Unified Tracker</span>
-                                <h3 class="platform-name">Codolio</h3>
-                            </div>
-                            <span class="dsa-verified-badge">Aggregated</span>
-                        </div>
-                        <div class="dsa-number-wrap">
-                            <span class="dsa-big-num">425+</span>
-                            <span class="dsa-subtext">Total Problems Across Platforms</span>
-                        </div>
-                        <p class="dsa-desc">
-                            All coding activity consolidated in one place on Codolio under the handle <code>code_with_naman</code>.
-                        </p>
-                        <a href="https://codolio.com/profile/code_with_naman" target="_blank" rel="noopener noreferrer" class="dsa-link">
-                            <span>View Codolio Profile</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience & Education Section -->
+        <!-- Experience and Education -->
         <section id="experience" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">05 / TIMELINE</span>
+                <div class="section-heading">
                     <h2 class="section-title">Experience & Education</h2>
-                    <p class="section-subtitle">
-                        My practical development experience, ongoing undergraduate education, and verified achievements.
-                    </p>
                 </div>
 
-                <div class="timeline-grid">
-                    <!-- Column 1: Experience & Education -->
-                    <div class="timeline-column">
-                        <h3 class="timeline-column-title">
-                            <span class="title-bullet"></span> Work Experience
-                        </h3>
-
-                        <div class="timeline-list">
-                            <div class="timeline-card">
-                                <div class="timeline-meta">
-                                    <span class="timeline-date">July 2025 – August 2025</span>
-                                    <span class="timeline-badge">Internship</span>
+                <div class="timeline-container">
+                    <div class="timeline-block">
+                        <h3 class="timeline-subheading">Experience</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-row">
+                                <div class="timeline-period">July 2025 – Aug 2025</div>
+                                <div class="timeline-main">
+                                    <h4 class="timeline-role">Java Developer Intern</h4>
+                                    <p class="timeline-org">CodSoft</p>
+                                    <p class="timeline-details">
+                                        Worked on Java programming, object-oriented concepts, and practical application development including console and UI based workflows.
+                                    </p>
                                 </div>
-                                <h4 class="timeline-role">Java Developer Intern</h4>
-                                <h5 class="timeline-company">CodSoft</h5>
-                                <p class="timeline-desc">
-                                    Focused on Java programming and practical application development. Implemented object-oriented principles, modular class architecture, and user-centric console/GUI workflows.
-                                </p>
-                            </div>
-                        </div>
-
-                        <h3 class="timeline-column-title section-spacer">
-                            <span class="title-bullet"></span> Education
-                        </h3>
-
-                        <div class="timeline-list">
-                            <div class="timeline-card">
-                                <div class="timeline-meta">
-                                    <span class="timeline-date">2024 – 2028</span>
-                                    <span class="timeline-badge highlight">CGPA: 8.12</span>
-                                </div>
-                                <h4 class="timeline-role">BTech in Computer Science and Engineering</h4>
-                                <h5 class="timeline-company">Galgotias University</h5>
-                                <p class="timeline-desc">
-                                    Currently in 2nd year. Core coursework covers Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, and Software Engineering principles.
-                                </p>
-                            </div>
-
-                            <div class="timeline-card">
-                                <div class="timeline-meta">
-                                    <span class="timeline-date">Completed 2024</span>
-                                    <span class="timeline-badge">80%</span>
-                                </div>
-                                <h4 class="timeline-role">Class XII (CBSE)</h4>
-                                <h5 class="timeline-company">Apollo International School</h5>
-                                <p class="timeline-desc">
-                                    Completed senior secondary education with focus on Physics, Chemistry, and Mathematics.
-                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Column 2: Verified Certifications & Achievements -->
-                    <div class="timeline-column">
-                        <h3 class="timeline-column-title">
-                            <span class="title-bullet"></span> Certifications & Achievements
-                        </h3>
-
-                        <div class="certifications-list">
-                            <div class="cert-card">
-                                <div class="cert-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="8" r="7"></circle>
-                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="cert-info">
-                                    <h4 class="cert-title">Object-Oriented Programming (OOPS)</h4>
-                                    <p class="cert-issuer">GUVI (HCL Certified)</p>
-                                    <p class="cert-detail">Comprehensive evaluation of OOP fundamentals, inheritance, polymorphism, and Java design patterns.</p>
+                    <div class="timeline-block">
+                        <h3 class="timeline-subheading">Education</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-row">
+                                <div class="timeline-period">2024 – 2028</div>
+                                <div class="timeline-main">
+                                    <h4 class="timeline-role">BTech in Computer Science and Engineering</h4>
+                                    <p class="timeline-org">Galgotias University</p>
+                                    <p class="timeline-details">
+                                        Third-Year Undergraduate Student • Current CGPA: <strong>8.12</strong>
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="cert-card">
-                                <div class="cert-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                                    </svg>
+                            <div class="timeline-row">
+                                <div class="timeline-period">2024</div>
+                                <div class="timeline-main">
+                                    <h4 class="timeline-role">Class XII (CBSE)</h4>
+                                    <p class="timeline-org">Apollo International School, Dehradun</p>
+                                    <p class="timeline-details">
+                                        Senior Secondary Education • Score: <strong>79.6%</strong>
+                                    </p>
                                 </div>
-                                <div class="cert-info">
-                                    <h4 class="cert-title">Introduction to Generative AI Studio</h4>
-                                    <p class="cert-issuer">Google Cloud / Coursera</p>
-                                    <p class="cert-detail">Foundations of generative models, prompt design, and AI tooling workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block">
+                        <h3 class="timeline-subheading">Certifications</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-row">
+                                <div class="timeline-period">Certified</div>
+                                <div class="timeline-main">
+                                    <h4 class="timeline-role">Object-Oriented Programming (OOPS)</h4>
+                                    <p class="timeline-org">GUVI (HCL Certified)</p>
+                                    <p class="timeline-details">
+                                        Evaluated on OOP principles, inheritance, polymorphism, encapsulation, and Java design fundamentals.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="cert-card">
-                                <div class="cert-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                    </svg>
-                                </div>
-                                <div class="cert-info">
-                                    <h4 class="cert-title">QuizCraze 2025</h4>
-                                    <p class="cert-issuer">KIOT</p>
-                                    <p class="cert-detail">Technical quiz competition testing core computer science, logical reasoning, and programming knowledge.</p>
-                                </div>
-                            </div>
-
-                            <div class="cert-card">
-                                <div class="cert-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="16 18 22 12 16 6"></polyline>
-                                        <polyline points="8 6 2 12 8 18"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="cert-info">
-                                    <h4 class="cert-title">CodeAstra Hackathon Participant</h4>
-                                    <p class="cert-issuer">Technical Hackathon</p>
-                                    <p class="cert-detail">Collaborated on rapid prototyping, system design, and hands-on problem solving under time constraints.</p>
+                            <div class="timeline-row">
+                                <div class="timeline-period">Certified</div>
+                                <div class="timeline-main">
+                                    <h4 class="timeline-role">Introduction to Generative AI Studio</h4>
+                                    <p class="timeline-org">Google Cloud</p>
+                                    <p class="timeline-details">
+                                        Foundations of generative models, prompt design, and AI tooling.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -808,142 +449,53 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section section-alt">
+        <!-- Get in Touch -->
+        <section id="contact" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">06 / CONTACT</span>
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">
-                        Feel free to reach out for internship opportunities, open source collaborations, project discussions, or questions about my work.
-                    </p>
-                </div>
-
-                <div class="contact-grid">
-                    <!-- Left: Contact Details -->
-                    <div class="contact-info-panel">
-                        <h3 class="panel-title">Let's Connect</h3>
-                        <p class="panel-desc">
-                            I am open to summer internships, student developer roles, and engineering collaborations. You can contact me directly via email or reach out on any of my profiles below.
+                <div class="contact-box">
+                    <div class="section-heading contact-heading">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-description">
+                            I am always open to discussing new projects, internship opportunities, or software development ideas. Feel free to send a message below or connect with me directly on social platforms.
                         </p>
-
-                        <div class="contact-methods">
-                            <div class="contact-method-card">
-                                <div class="method-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="method-details">
-                                    <span class="method-label">Direct Email</span>
-                                    <a href="mailto:namancse9258@gmail.com" class="method-value email-link">namancse9258@gmail.com</a>
-                                </div>
-                                <button type="button" class="copy-btn" id="copy-email-btn" aria-label="Copy email address" title="Copy email address">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <div class="contact-method-card">
-                                <div class="method-icon">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
-                                </div>
-                                <div class="method-details">
-                                    <span class="method-label">Location</span>
-                                    <span class="method-value">Greater Noida, Uttar Pradesh, India</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-profiles-group">
-                            <span class="profiles-group-title">Profiles & Socials</span>
-                            <div class="profile-links-grid">
-                                <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="profile-pill-link">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-                                    </svg>
-                                    <span>GitHub</span>
-                                </a>
-
-                                <a href="https://linkedin.com/in/namanpal" target="_blank" rel="noopener noreferrer" class="profile-pill-link">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.05 1.53 1.53 0 0 0 .01 3.05m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
-                                    </svg>
-                                    <span>LinkedIn</span>
-                                </a>
-
-                                <a href="https://leetcode.com/u/namanpal9258/" target="_blank" rel="noopener noreferrer" class="profile-pill-link">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.6 2.6 0 0 1 .383-.357l3.997-4.28 4.908-5.328a1.383 1.383 0 0 0-.96-2.327zM8.32 12.062a1.376 1.376 0 0 0-1.376 1.376 1.376 1.376 0 0 0 1.376 1.376h8.498a1.376 1.376 0 0 0 1.376-1.376 1.376 1.376 0 0 0-1.376-1.376H8.32z"/>
-                                    </svg>
-                                    <span>LeetCode</span>
-                                </a>
-
-                                <a href="https://www.geeksforgeeks.org/profile/namanpab0hz?tab=activity" target="_blank" rel="noopener noreferrer" class="profile-pill-link">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
-                                    </svg>
-                                    <span>GeeksforGeeks</span>
-                                </a>
-
-                                <a href="https://codolio.com/profile/code_with_naman" target="_blank" rel="noopener noreferrer" class="profile-pill-link">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/>
-                                    </svg>
-                                    <span>Codolio</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- Right: Direct Message Composer -->
-                    <div class="contact-composer-panel">
-                        <h3 class="panel-title">Send a Message</h3>
-                        <p class="panel-desc">
-                            Fill out the fields below and click <strong>Open in Email Client</strong> to compose directly to <span class="text-accent">namancse9258@gmail.com</span> with your pre-filled text.
-                        </p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Your name" required autocomplete="name">
+                        </div>
 
-                        <form id="contact-email-form" class="composer-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="sender-name">Your Name</label>
-                                    <input type="text" id="sender-name" class="form-input" placeholder="e.g. Alex Sharma" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sender-email">Your Email</label>
-                                    <input type="email" id="sender-email" class="form-input" placeholder="e.g. alex@example.com" required>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="Your email address" required autocomplete="email">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="message-subject">Subject</label>
-                                <input type="text" id="message-subject" class="form-input" placeholder="e.g. Internship Inquiry / Project Discussion" required>
-                            </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="message-body">Message</label>
-                                <textarea id="message-body" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
-                            </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
 
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary btn-block">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                    </svg>
-                                    <span>Open in Email Client</span>
-                                </button>
-                                <p class="form-note">
-                                    Opens your default mail client with a prepared draft. No spam, no intermediary servers.
-                                </p>
-                            </div>
-                        </form>
+                    <div class="contact-social-row">
+                        <span class="social-row-label">Connect:</span>
+                        <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="social-text-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <span class="social-separator">•</span>
+                        <a href="https://linkedin.com/in/namanpal" target="_blank" rel="noopener noreferrer" class="social-text-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.05 1.53 1.53 0 0 0 .01 3.05m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -952,42 +504,18 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container footer-container">
+        <div class="container footer-content">
             <div class="footer-left">
-                <a href="#home" class="footer-brand">Naman Pal</a>
-                <p class="footer-tagline">
-                    2nd-Year BTech CSE Student at Galgotias University (Class of 2028).
-                </p>
+                <span class="footer-brand">Naman Pal</span>
+                <span class="footer-copy">&copy; 2026. All rights reserved.</span>
             </div>
-
-            <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#dsa">DSA</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copy">
-                    &copy; 2026 Naman Pal. Built with clean HTML, CSS and JavaScript.
-                </p>
-                <a href="#home" class="back-to-top" aria-label="Back to top">
-                    <span>Back to top</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="12" y1="19" x2="12" y2="5"></line>
-                        <polyline points="5 12 12 5 19 12"></polyline>
-                    </svg>
-                </a>
+            <div class="footer-socials">
+                <a href="https://github.com/namanpal07" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+                <span class="footer-separator">•</span>
+                <a href="https://linkedin.com/in/namanpal" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
             </div>
         </div>
     </footer>
-
-    <!-- Notification Toast for Copied Email -->
-    <div id="toast" class="toast" role="status" aria-live="polite">
-        <span>Email copied to clipboard!</span>
-    </div>
 
     <script src="script.js"></script>
 </body>
